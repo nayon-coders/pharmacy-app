@@ -1,0 +1,127 @@
+<resources>
+
+    <string name="currency_bdt">৳</string>
+    <string name="sample_price">৳ 78</string>
+
+    <string name="app_name">My Pharmacy</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_loading">Please wait…</string>
+
+    <string name="text_login_here">Already have an account? <font color="#1da1f2"><b>Login Here</b></font></string>
+    <string name="text_sign_up_here">Don\'t have an account? <font color="#1da1f2"><b>Sign Up Here</b></font></string>
+    <string name="text_forgot_password">Forgot your password?</string>
+    <string name="text_login_description"><![CDATA[Welcome back! Login with your email & password]]></string>
+
+
+    <string name="message_blank_person_name">Enter Your Full Name Here</string>
+    <string name="message_blank_email">Enter Your Email Address Here</string>
+    <string name="message_invalid_email">Email Pattern Is Not Valid</string>
+    <string name="message_blank_phone">Enter Your Phone Number Here</string>
+    <string name="message_invalid_phone">Phone Number Is Not Valid</string>
+    <string name="message_blank_password">Enter Password Here</string>
+    <string name="message_password_length_error">Password must be at least 8 character</string>
+    <string name="text_otp">Email Verification</string>
+    <string name="text_verification_description">We send you a verification code via your email address. Please check inbox and verify your account.</string>
+    <string name="btn_text_verify">Verify</string>
+    <string name="text_resend_otp">Don\'t get email? <font color="#00e1ff"><b>Resend again</b></font></string>
+    <string name="search_hint">Search By Name</string>
+
+
+    <string name="on_call_title">On-Call Doctor</string>
+    <string name="order_medicine_text">To Place your Order Please Upload your Prescription by clicking in the Button Below.</string>
+    <string name="cart">Cart</string>
+    <string name="account_title">Your Account</string>
+    <string name="no_product_found">No Product Found</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving…</string>
+    <string name="saved">Saved</string>
+    <string name="cart_is_empty">Cart is Empty</string>
+    <string name="registration_success_message">Your account successfully crated. To continue, Login your account by using email and password.</string>
+    <string name="full_name">Full Name <font color="red"><bold>*</bold></font></string>
+    <string name="phone">Phone <font color="red"><bold>*</bold></font></string>
+    <string name="email">Email <font color="red"><bold>*</bold></font></string>
+    <string name="secondary_address">Secondary Address</string>
+    <string name="primary_address">Primary Address <font color="red"><bold>*</bold></font></string>
+    <string name="update_profile">Update Profile</string>
+    <string name="address_information">Address Information <font color="red"><bold>*</bold></font></string>
+    <string name="personal_information">Personal Information <font color="red"><bold>*</bold></font></string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="confirm_password">Confirm Password <font color="red">*</font></string>
+    <string name="update_information">Update Information</string>
+    <string name="required">Required!</string>
+
+    <string name="division_district_upazila_error">Please select <b color='red'>Division</b>,<b color='red'>District</b> and <b color='red'>Upazila</b>.</string>
+    <string name="not_selected">Not Selected</string>
+    <string name="post_code">Post Code/Zip <font color="red">*</font></string>
+    <string name="buy_more">Buy More</string>
+    <string name="checkout">Checkout</string>
+    <string name="categories">Categories</string>
+    <string name="order">Order</string>
+    <string name="product_image">Product Image</string>
+    <string name="sample_product_name">Ace Plus (625mg)</string>
+    <string name="tablet">Tablet</string>
+    <string name="sample_brand_name">Square Pharmaceutical\'s Ltd</string>
+    <string name="upload_prescription">"Upload Prescription"</string>
+    <string name="upload">Upload</string>
+    <string name="retry">Retry</string>
+    <string name="prescription_photo">Prescription Photo</string>
+    <string name="choose_option">Choose Option</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="crop_image">CropImage</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_buy_medicine"><![CDATA[Search & Buy Medicine]]></string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="support">Support</string>
+    <string name="legal">Legal</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="logo">Logo</string>
+    <string name="menu_icon">Menu Icon</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="camera_icon">Camera Icon</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="view_product">View</string>
+    <string name="see_all">See All</string>
+    <string name="_0">0</string>
+    <string name="profile">Profile</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="wallet">Wallet</string>
+    <string name="orders">Orders</string>
+    <string name="my_order">My Orders</string>
+    <string name="favourite_list">Favourite List</string>
+    <string name="promotions">Promotions</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="or">or</string>
+    <string name="signup">Signup</string>
+    <string name="login_or_sign_up_to_continue">Login or Sign Up to Continue</string>
+    <string name="quantity">Quantity:</string>
+    <string name="_1">1</string>
+    <string name="confirm">Confirm</string>
+    <string name="search">Search</string>
+    <string name="not_implemented_yet">Not Implemented Yet</string>
+    <string name="user_instruction">User Instruction</string>
+    <string name="why_upload_a_prescription">Why upload a prescription</string>
+    <string name="faqs">FAQs</string>
+    <string name="about_us">About Us</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="place_order">Place Order</string>
+    <string name="details">Prescription Details</string>
+    <string name="requisition_details">Requisition Details</string>
+    <string name="prescription">Prescriptions</string>
+    <string name="buy">Cart</string>
+    <string name="inStock">In Stock</string>
+    <string name="my_order_details">Order Details</string>
+    <string name="deliveryman">Delivery Man Info</string>
+    <string name="payment">Payment Info</string>
+
+</resources>

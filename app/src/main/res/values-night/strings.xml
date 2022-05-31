@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details">Prescription Details</string>
+    <string name="requisition_details">Requisition Details</string>
+    <string name="prescription">Prescriptions</string>
+    <string name="buy">Cart</string>
+    <string name="inStock">In Stock</string>
+    <string name="my_order_details">Order Details</string>
+    <string name="deliveryman">Delivery Man Info</string>
+    <string name="payment">Payment Info</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_title_text_size">22sp</dimen>
+    <dimen name="home_search_box_height">48dp</dimen>
+    <dimen name="cart_icon_width">48dp</dimen>
+    <dimen name="cart_icon_height">48dp</dimen>
+    <dimen name="ic_back_width">36dp</dimen>
+    <dimen name="ic_back_height">36dp</dimen>
+    <dimen name="ic_menu_height">30dp</dimen>
+    <dimen name="ic_menu_width">36dp</dimen>
+    <dimen name="image_slider_height">160dp</dimen>
+    <dimen name="topBar_height">?attr/actionBarSize</dimen>
+</resources>

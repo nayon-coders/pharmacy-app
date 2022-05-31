@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/what_are_you_looking_for">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/fragmentSearch"
+                    android:icon="@drawable/ic_baseline_search_24"
+                    android:title="@string/search_buy_medicine" />
+
+                <item
+                    android:id="@+id/fragmentUploadPrescription"
+                    android:icon="@drawable/ic_baseline_photo_camera_24"
+                    android:title="@string/upload_prescription" />
+                <item
+                    android:id="@+id/fragmentCategories"
+                    android:icon="@drawable/ic_category"
+                    android:title="@string/categories" />
+                <item
+                    android:id="@+id/fragmentOrderList"
+                    android:icon="@drawable/ic_category"
+                    android:title="@string/order" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/item4"
+        android:title="@string/support">
+        <menu>
+            <group>
+
+                <item
+                    android:id="@+id/fragmentUserInstruction"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/user_instruction" />
+
+                <item
+                    android:id="@+id/fragmentPrescriptionInstruction"
+                    android:icon="@drawable/ic_upload_prescription"
+                    android:title="@string/why_upload_a_prescription" />
+
+                <item
+                    android:id="@+id/fragmentFAQs"
+                    android:icon="@drawable/ic_faq"
+                    android:title="@string/faqs" />
+
+                <item
+                    android:id="@+id/fragmentAboutUs"
+                    android:icon="@drawable/ic_about_us"
+                    android:title="@string/about_us" />
+
+                <item
+                    android:id="@+id/fragmentShare"
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share" />
+
+                <item
+                    android:id="@+id/fragmentRateUs"
+                    android:icon="@drawable/ic_rate_us"
+                    android:title="@string/rate_us" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/legal">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/fragmentTermsCondition"
+                    android:icon="@drawable/ic_terms_condition"
+                    android:title="@string/terms_condition" />
+                <item
+                    android:id="@+id/fragmentPrivacyPolicy"
+                    android:icon="@drawable/ic_privacy_policy"
+                    android:title="@string/privacy_policy" />
+            </group>
+        </menu>
+    </item>
+</menu>

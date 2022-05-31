@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main_activity.fragments.upload_prescription.view.FragmentUploadPrescription">
+
+   <include
+       android:id="@+id/topBar"
+       layout="@layout/layout_top_bar"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/topBar_height"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/layoutPhotoViewer"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:visibility="visible"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+      <ImageView
+          android:id="@+id/ivPrescription"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginBottom="16dp"
+          android:contentDescription="@string/prescription_photo"
+          android:scaleType="fitXY"
+          android:src="@color/black"
+          app:layout_constraintBottom_toTopOf="@+id/btnRetry"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/btnUpload"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="32dp"
+          android:text="@string/upload"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toEndOf="@+id/btnRetry" />
+
+      <Button
+          android:id="@+id/btnRetry"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginBottom="32dp"
+          android:text="@string/retry"
+          android:backgroundTint="@color/white"
+          android:textColor="@color/color_primary_text"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/btnUpload"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/layoutTakePhoto"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:visibility="gone"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+      <Button
+          android:id="@+id/btnTakePhoto"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/take_photo"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.mypharmacybd.ui.auth.fragments.user_login.view.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentLogin"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.mypharmacybd.ui.auth.fragments.user_registration.view.FragmentRegistration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_fragmentRegistration_to_fragmentLogin"
+            app:destination="@id/fragmentLogin"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentRegistration"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentRegistration_to_fragmentSuccess"
+            app:destination="@id/fragmentSuccess"
+            app:popUpTo="@id/fragmentRegistration"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentVerification"
+        android:name="com.mypharmacybd.ui.auth.fragments.user_registration.view.FragmentVerification"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+    <fragment
+        android:id="@+id/fragmentSuccess"
+        android:name="com.mypharmacybd.ui.auth.fragments.user_registration.view.FragmentSuccess"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_fragmentSuccess_to_fragmentLogin"
+            app:destination="@id/fragmentLogin"
+            app:popUpTo="@id/fragmentSuccess"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>

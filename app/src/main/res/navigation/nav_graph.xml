@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.home.view.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentProductDetails"
+            app:destination="@id/fragmentProductDetails" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentCategoryDetails"
+            app:destination="@id/fragmentCategoryDetails" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentUploadPrescription"
+            app:destination="@id/fragmentUploadPrescription" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProductDetails"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.product_details.FragmentProductDetails"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <argument
+            android:name="product"
+            app:argType="com.mypharmacybd.data_models.Product" />
+        <action
+            android:id="@+id/action_fragmentProductDetails_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentProductDetails_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCart"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.cart.view.FragmentCart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentCheckout"
+            app:destination="@id/fragmentCheckout" />
+        <action
+            android:id="@+id/action_fragmentCart_to_activityAuth"
+            app:destination="@id/activityAuth" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAccount"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.account.view.FragmentAccount"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_fragmentAccount_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentAccount_to_activityAuth"
+            app:destination="@id/activityAuth" />
+        <action
+            android:id="@+id/action_fragmentAccount_to_fragmentUpdateUserInfo"
+            app:destination="@id/fragmentUpdateUserInfo" />
+        <action
+            android:id="@+id/action_fragmentAccount_to_fragmentOrderList"
+            app:destination="@id/fragmentOrderList" />
+        <action
+            android:id="@+id/action_fragmentAccount_to_listOfPrescriptionsFragment"
+            app:destination="@id/listOfPrescriptionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCategories"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.categories.view.FragmentCategories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <argument
+            android:name="category"
+            app:argType="com.mypharmacybd.data_models.Category" />
+        <action
+            android:id="@+id/action_fragmentCategories_to_fragmentCategoryDetails"
+            app:destination="@id/fragmentCategoryDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCategoryDetails"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.category_details.view.FragmentCategoryDetails"
+        android:label="fragment_category_details"
+        tools:layout="@layout/fragment_category_details" >
+        <argument
+            android:name="category"
+            app:argType="com.mypharmacybd.data_models.Category" />
+        <action
+            android:id="@+id/action_fragmentCategoryDetails_to_fragmentProductDetails"
+            app:destination="@id/fragmentProductDetails" />
+        <action
+            android:id="@+id/action_fragmentCategoryDetails_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentCategoryDetails_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUnderMaintenance"
+        android:name="com.mypharmacybd.ui.maintenance.FragmentUnderMaintenance"
+        android:label="fragment_under_maintenance"
+        tools:layout="@layout/fragment_under_maintenance" />
+    <activity
+        android:id="@+id/activityAuth"
+        android:name="com.mypharmacybd.ui.auth.ActivityAuth"
+        android:label="activity_auth"
+        tools:layout="@layout/activity_auth" >
+        <argument
+            android:name="action"
+            app:argType="integer" />
+    </activity>
+    <fragment
+        android:id="@+id/fragmentUpdateUserInfo"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.user_update_info.view.FragmentUpdateUserInfo"
+        android:label="fragment_update_user_info"
+        tools:layout="@layout/fragment_update_user_info" >
+        <action
+            android:id="@+id/action_fragmentUpdateUserInfo_to_fragmentCropImage"
+            app:destination="@id/fragmentCropImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUploadPrescription"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.upload_prescription.view.FragmentUploadPrescription"
+        android:label="fragment_upload_prescription"
+        tools:layout="@layout/fragment_upload_prescription" >
+        <action
+            android:id="@+id/action_fragmentUploadPrescription_to_fragmentUnderMaintenance"
+            app:destination="@id/fragmentUnderMaintenance" />
+        <action
+            android:id="@+id/action_fragmentUploadPrescription_to_fragmentUploadPrescriptionInfo"
+            app:destination="@id/fragmentUploadPrescriptionInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCropImage"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.FragmentCropImage"
+        android:label="fragment_crop_image"
+        tools:layout="@layout/fragment_crop_image" >
+        <argument android:name="imageFile"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.search.view.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_fragmentSearch_to_fragmentProductDetails"
+            app:destination="@id/fragmentProductDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUserInstruction"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.instruction_user.FragmentUserInstruction"
+        android:label="fragment_user_instruction"
+        tools:layout="@layout/fragment_user_instruction" />
+    <fragment
+        android:id="@+id/fragmentPrescriptionInstruction"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.instruction_prescription.FragmentPrescriptionInstruction"
+        android:label="fragment_prescription_instruction"
+        tools:layout="@layout/fragment_prescription_instruction" />
+    <fragment
+        android:id="@+id/fragmentFAQs"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.faqs.FragmentFAQs"
+        android:label="fragment_f_a_qs"
+        tools:layout="@layout/fragment_f_a_qs" />
+    <fragment
+        android:id="@+id/fragmentAboutUs"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.about_us.FragmentAboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/fragmentShare"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.share.FragmentShare"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/fragmentRateUs"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.rate_us.FragmentRateUs"
+        android:label="fragment_rate_us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/fragmentTermsCondition"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.terms_condition.FragmentTermsCondition"
+        android:label="fragment_terms_condition"
+        tools:layout="@layout/fragment_terms_condition" />
+    <fragment
+        android:id="@+id/fragmentPrivacyPolicy"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.privacy_policy.FragmentPrivacyPolicy"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/fragmentCheckout"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.checkout.view.FragmentCheckout"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_fragmentCheckout_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOrderList"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.order_list.view.FragmentOrderList"
+        android:label="fragment_order_list"
+        tools:layout="@layout/fragment_order_list" >
+
+        <action
+            android:id="@+id/action_fragmentOrderList_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+        <action
+            android:id="@+id/action_fragmentOrderList_to_singleOrderItemViewFragment"
+            app:destination="@id/singleOrderItemViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUploadPrescriptionInfo"
+        android:name="com.mypharmacybd.FragmentUploadPrescriptionInfo"
+        android:label="fragment_fregment_upload_prescription_info"
+        tools:layout="@layout/fragment_fregment_upload_prescription_info" />
+    <fragment
+        android:id="@+id/orderListItemViewFragment"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.order_list.view.OrderListItemViewFragment"
+        android:label="fragment_order_list_item_view"
+        tools:layout="@layout/fragment_order_list_item_view" >
+
+        <action
+            android:id="@+id/action_orderListItemViewFragment_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfPrescriptionsFragment"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.order_list.view.orderlist_view_support.req_list.view.ListOfPrescriptionsFragment"
+        android:label="fragment_list_of_prescriptions"
+        tools:layout="@layout/fragment_list_of_prescriptions" >
+        <action
+            android:id="@+id/action_listOfPrescriptionsFragment_to_orderListItemViewFragment"
+            app:destination="@id/orderListItemViewFragment" />
+        <action
+            android:id="@+id/action_listOfPrescriptionsFragment_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleOrderItemViewFragment"
+        android:name="com.mypharmacybd.ui.main_activity.fragments.order_list.view.order_single_item.view.SingleOrderItemViewFragment"
+        android:label="fragment_single_order_item_view"
+        tools:layout="@layout/fragment_single_order_item_view" >
+        <action
+            android:id="@+id/action_singleOrderItemViewFragment_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+</navigation>
